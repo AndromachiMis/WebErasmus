@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+	<%@ page import="gr.hua.weberasmus.WebErasmusGeneric" %>
 <%@ page import="java.sql.PreparedStatement" %> 
 <%@ page import="java.sql.Statement" %> 
 <%@ page import="java.sql.Connection" %>	
