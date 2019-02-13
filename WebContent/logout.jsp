@@ -8,13 +8,13 @@
 <title>logout</title>
 </head>
 <body>
-       <center>Are you sure you want to disconnect?</br>
+       <center>
+       <h2>Are you sure you want to disconnect?</h2></br>
        <form action="LogoutServlet" method="post">
-
-                <input type="submit" value="Logout"></br>
-                <a href="javascript:history.back()">If not, return back</a>
+       		<button type="submit">Logout</button> </br>
+       		</br>
+            <a href="javascript:history.back()">If not, return back</a>
                 
-
         </form></center>
 </body>
 </html>
