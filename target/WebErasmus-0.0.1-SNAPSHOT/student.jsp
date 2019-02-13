@@ -14,7 +14,7 @@
 <style type="text/css">
 
 .student-menu {
-  width: 200px; /* Set a width if you like */
+  width: 300px; /* Set a width if you like */  
 }
 
 .student-menu a {
@@ -23,22 +23,25 @@
   display: block; /* Make the links appear below each other */
   padding: 12px; /* Add some padding */
   text-decoration: none; /* Remove underline from links */
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  
 }
 
 .student-menu a:hover {
-  background-color: #ccc; /* Dark grey background on mouse-over */
+	 background-color: #ccc;  /* Dark grey background on mouse-over */
 }
 
 .student-menu a.active {
-  background-color: #4CAF50; /* Add a green color to the "active/current" link */
-  color: white;
+   background-color: #4285F4;      /*Add a blue color to the "active/current" link */
+   color: white;    
 }
 
 </style>
 </head>
 <body>
-Welcome to Erasmus</br>
-Select a Service from the menu below:</br>
+<h2>Welcome to ErasmusApp!</h2>
+<h2>Select a Service from the menu below:</h2>
+</br>
 
 <div class="student-menu">
   <a href="student.jsp" class="active">Home</a>
