@@ -12,11 +12,9 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
 <style type="text/css">
-
 .head-menu {
   width: 300px; /* Set a width if you like */  
 }
-
 .head-menu a {
   background-color: #eee; /* Grey background color */
   color: black; /* Black text color */
@@ -26,16 +24,13 @@
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
   
 }
-
 .head-menu a:hover {
 	 background-color: #ccc;  /* Dark grey background on mouse-over */
 }
-
 .head-menu a.active {
    background-color: #4285F4;      /*Add a blue color to the "active/current" link */
    color: white;    
 }
-
 </style>
 </head>
 <body>

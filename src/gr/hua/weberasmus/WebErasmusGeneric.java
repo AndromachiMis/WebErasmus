@@ -10,8 +10,8 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.json.JSONArray;
-import org.json.JSONObject;
+import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 
@@ -25,7 +25,9 @@ public class WebErasmusGeneric {
 	private URLConnection getConnection(String endpoint) {
 		URLConnection connection = null;
 		try {
-			connection = new URL(URL + UNIVERSITIES_API + endpoint).openConnection();
+			String url = URL + endpoint;
+			System.out.println(url);
+			connection = new URL(url).openConnection();
 			connection.setRequestProperty("Accept-Charset", CHARSET);
 		} catch (MalformedURLException e) {
 			e.printStackTrace();
@@ -35,11 +37,11 @@ public class WebErasmusGeneric {
 		return connection;
 	}
 	
-	private JSONObject getJsonResponse(InputStream response) {
+	private JSONArray getJsonResponse(InputStream response) {
 		JSONParser jsonParser = new JSONParser();
-		JSONObject jsonObject = new JSONObject();
+		JSONArray jsonArray = new JSONArray();
 		try {
-			jsonObject = (JSONObject)jsonParser.parse(new InputStreamReader(response, CHARSET));
+			jsonArray = (JSONArray)jsonParser.parse(new InputStreamReader(response, CHARSET));
 		} catch (UnsupportedEncodingException e) {
 			e.printStackTrace();
 		} catch (IOException e) {
@@ -47,17 +49,16 @@ public class WebErasmusGeneric {
 		} catch (ParseException e) {
 			e.printStackTrace();
 		}
-		return jsonObject;
+		return jsonArray;
 	}
 	
 	public List<JSONObject> getUniversities() throws IOException {
 		List<JSONObject> uniList = new ArrayList<JSONObject>();
-		URLConnection connection = getConnection("/getuniversities");
+		URLConnection connection = getConnection(UNIVERSITIES_API + "/getuniversities");
 		InputStream response = connection.getInputStream();
-		JSONObject jsonObject = getJsonResponse(response);
-	    JSONArray array = new JSONArray(jsonObject);
-	    for (int i = 0; i < array.length(); i++) {
-	        uniList.add(array.getJSONObject(i));
+		JSONArray array = getJsonResponse(response);
+	    for (int i = 0; i < array.size(); i++) {
+	        uniList.add((JSONObject)array.get(i));
 	    }
 		return uniList;
 	}
