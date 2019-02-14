@@ -4,50 +4,39 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="ISO-8859-1">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+
 <title>Student's menu</title>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
-<style type="text/css">
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
-.student-menu {
-  width: 300px; /* Set a width if you like */  
-}
-
-.student-menu a {
-  background-color: #eee; /* Grey background color */
-  color: black; /* Black text color */
-  display: block; /* Make the links appear below each other */
-  padding: 12px; /* Add some padding */
-  text-decoration: none; /* Remove underline from links */
-  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
-  
-}
-
-.student-menu a:hover {
-	 background-color: #ccc;  /* Dark grey background on mouse-over */
-}
-
-.student-menu a.active {
-   background-color: #4285F4;      /*Add a blue color to the "active/current" link */
-   color: white;    
-}
-
-</style>
 </head>
 <body>
-<h2>Welcome to ErasmusApp!</h2>
-<h2>Select a Service from the menu below:</h2>
-</br>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">ErasmusApp</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="student.jsp">Home</a></li>
+      <li><a href="form.jsp">Submit Form</a></li>
+      <li><a href="unilist.jsp">Collaborating Universities</a></li>          
+      <li><a href="logout.jsp">Logout</a></li>
+    </ul>
+  </div>
+</nav>
 
-<div class="student-menu">
-  <a href="student.jsp" class="active">Home</a>
-  <a href="form.jsp">Submit form</a>
-  <a href="unilist.jsp">Details for Universities</a>
-  <a href="logout.jsp">Logout</a>
+<div class="container">
+  <h3>Welcome to ErasmusApp</h3>
+  <p>Have you ever wanted to live abroad and experience a foreign culture, meet new people and learn a foreign language?
+Have you ever thought about enriching the period of your studies and having better chances while looking for a job in the future?
+Have you ever been excited to share your ideas and to create good things with other students from all around the world?
+Have you ever dreamed to do an internship abroad, to learn co-operative work?
+Have you ever heard that life won’t be the same after Erasmus?
+<h3>What is Erasmus?</h3>
+The Erasmus+ Programme is a European funding programme established in 1987 offering university students a possibility of studying or doing an internship abroad in another country for a period of at least 2 months and maximum 12 months per cycle of studies. Erasmus+ now offers the possibility to go way beyond the European borders as well.</p>
 </div>
 
 	</body>

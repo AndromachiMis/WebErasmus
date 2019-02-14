@@ -6,6 +6,9 @@
 <%@ page import="java.sql.Connection" %>	
 <%@ page import="java.sql.ResultSet" %>
 <%@ page import="java.sql.DriverManager" %>
+<%@ page import="org.json.simple.JSONObject" %>
+<%@ page import="java.util.List" %>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -21,6 +24,9 @@
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
+<% 	
+		WebErasmusGeneric weg = new WebErasmusGeneric();
+		List<JSONObject> list = weg.getUniversities(); %>
 
 	<div class="container">
 		<h2>Students List</h2>

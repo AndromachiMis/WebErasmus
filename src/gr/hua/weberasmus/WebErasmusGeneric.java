@@ -18,7 +18,7 @@ import org.json.simple.parser.ParseException;
 public class WebErasmusGeneric {
 	
 	public static final String URL = "http://localhost:8080/ErasmusApp";
-	public static final String STUDENT_API = "/api/student";
+	public static final String STUDENT_API = "/api";
 	public static final String UNIVERSITIES_API = "/api/universities";
 	public static final String CHARSET = "UTF-8";
 	
@@ -61,5 +61,16 @@ public class WebErasmusGeneric {
 	        uniList.add((JSONObject)array.get(i));
 	    }
 		return uniList;
+	}
+	
+	public List<JSONObject> getStudents() throws IOException {
+		List<JSONObject> studList = new ArrayList<JSONObject>();
+		URLConnection connection = getConnection(STUDENT_API + "/students");
+		InputStream response = connection.getInputStream();
+		JSONArray array = getJsonResponse(response);
+	    for (int i = 0; i < array.size(); i++) {
+	        studList.add((JSONObject)array.get(i));
+	    }
+		return studList;
 	}
 }

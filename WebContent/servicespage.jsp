@@ -4,50 +4,37 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="ISO-8859-1">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Head secretary's Menu</title>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
-<style type="text/css">
-.head-menu {
-  width: 300px; /* Set a width if you like */  
-}
-.head-menu a {
-  background-color: #eee; /* Grey background color */
-  color: black; /* Black text color */
-  display: block; /* Make the links appear below each other */
-  padding: 12px; /* Add some padding */
-  text-decoration: none; /* Remove underline from links */
-  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
-  
-}
-.head-menu a:hover {
-	 background-color: #ccc;  /* Dark grey background on mouse-over */
-}
-.head-menu a.active {
-   background-color: #4285F4;      /*Add a blue color to the "active/current" link */
-   color: white;    
-}
-</style>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
 </head>
 <body>
-<h2>Welcome to ErasmusApp!</h2>
-<h2>Select a Service from the menu below:</h2>
-</br>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">ErasmusApp</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="servicespage.jsp">Home</a></li>
+      <li><a href="addstudent.jsp">Add Student</a></li>
+      <li><a href="deletestudent.jsp">Delete Student</a></li>
+      <li><a href="updatestudent.jsp">Update Student</a></li>
+      <li><a href="studentlist.jsp">See all Students</a></li>
+      <li><a href="adduniversity.jsp">Add university</a></li>
+      <li><a href="updateuniversity.jsp">Update University</a></li>
+      <li><a href="deleteuni.jsp">Delete University</a></li>
+      <li><a href="logout.jsp">Logout</a></li>
+    </ul>
+  </div>
+</nav>
 
-<div class="head-menu">
-	<a href="servicespage.jsp" class="active">Home</a>
-	<a href="addstudent.jsp">Add Student</a>
-	<a href="deletestudent.jsp">Delete Student</a>
-	<a href="updatestudent.jsp">Update Student</a>
-	<a href="studentlist.jsp">See all Students</a>
-	<a href="adduniversity.jsp">Add University</a>
-	<a href="updateuniversity.jsp">Update University</a>
-	<a href="deleteuni.jsp">Delete University</a>
-	<a href="logout.jsp">Logout</a>
+<div class="container">
+  <h3>Welcome to administration page of ErasmusApp</h3>
+  <p>In this page you have a variety of functions.</p>
 </div>
 
 </body>

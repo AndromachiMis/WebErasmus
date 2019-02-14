@@ -33,7 +33,7 @@ con = DriverManager.getConnection(jdbcUrl, user, pass);
 <div class = "page-header">
    
    <h1>
-      Add New Student Form      
+      Participation in Erasmus Form      
       
    </h1>
    <p>The following form must be completed successfully in order to be an Erasmus Student. After the submission, we will send you an email to announce you if you are accepted or not in any of the universities that you have chosen. </p>
