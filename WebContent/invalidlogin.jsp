@@ -7,8 +7,11 @@
 <title>Invalid Login</title>
 </head>
 <body>
-	<center>Sorry, your username or password is incorrect! Please
-		try again! </br><a href="">Try Again</a></center>
+	<center>
+	<h2>Sorry, your username or password is incorrect! Please
+		try again!</h2>
+		 </br>
+		 <a href="">Try Again</a></center>
 		
 </body>
 </html>

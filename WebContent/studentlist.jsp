@@ -26,7 +26,7 @@
 <body>
 <% 	
 		WebErasmusGeneric weg = new WebErasmusGeneric();
-		List<JSONObject> list = weg.getUniversities(); %>
+		List<JSONObject> list = weg.getStudents(); %>
 
 	<div class="container">
 		<h2>Students List</h2>

@@ -10,6 +10,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Erasmus Form</title>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -27,9 +28,33 @@ con = DriverManager.getConnection(jdbcUrl, user, pass);
 } catch (Exception e) {
  e.printStackTrace();
  } %>
+ 
+ <style>
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.bg {
+  /* The image used */
+  background-image: url("erasmus-form.jpg");
+
+  /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+</style>
+ 
+ 
 </head>
 <body>
 <form action="StudentServlet" method="POST">
+<div class="bg">
+
 <div class = "page-header">
    
    <h1>
@@ -95,7 +120,8 @@ con = DriverManager.getConnection(jdbcUrl, user, pass);
       </div>
       </div>  
   <button type="submit" class="btn btn-primary">Submit</button>
-   
+ 
+ </div>  
 </form>
 </body>
 </html>
