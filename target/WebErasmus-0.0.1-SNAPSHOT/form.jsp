@@ -37,10 +37,10 @@ body, html {
 
 .bg {
   /* The image used */
-  background-image: url("erasmus-form.jpg");
+  background-image: url("erasmus-form.png");
 
   /* Full height */
-  height: 100%; 
+  height: 30%; 
 
   /* Center and scale the image nicely */
   background-position: center;
@@ -52,8 +52,10 @@ body, html {
  
 </head>
 <body>
+
+<div class="bg"> </div>
+
 <form action="StudentServlet" method="POST">
-<div class="bg">
 
 <div class = "page-header">
    
@@ -62,8 +64,9 @@ body, html {
       
    </h1>
    <p>The following form must be completed successfully in order to be an Erasmus Student. After the submission, we will send you an email to announce you if you are accepted or not in any of the universities that you have chosen. </p>
-   
+      
 </div>
+
 <div class = "form-group">
 <label for="id">Id:</label>
 <input type="text" class="form-control" id="id" placeholder="Enter your id">
@@ -120,8 +123,7 @@ body, html {
       </div>
       </div>  
   <button type="submit" class="btn btn-primary">Submit</button>
- 
- </div>  
+  
 </form>
 </body>
 </html>
