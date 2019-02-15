@@ -21,6 +21,19 @@
 	<% 	
 		WebErasmusGeneric weg = new WebErasmusGeneric();
 		List<JSONObject> list = weg.getUniversities(); %>
+		<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">ErasmusApp</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="student.jsp">Home</a></li>
+      <li><a href="form.jsp">Submit Form</a></li>
+      <li><a href="unilist.jsp">Collaborating Universities</a></li>          
+      <li><a href="logout.jsp">Logout</a></li>
+    </ul>
+  </div>
+</nav>
 	<div class="container">
 		<h2>Universities List</h2>
 		<p>In the list below you can find all the Collaborating

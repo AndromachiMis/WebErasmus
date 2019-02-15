@@ -26,8 +26,9 @@ html{
 .bg-img {
   /* The image used */
   background-image: url(Erasmus-img.jpg);
+  height: 100%;
 
-  min-height: 380px;
+  min-height: 750px;
 
   /* Center and scale the image nicely */
   background-position: center;
@@ -84,11 +85,11 @@ input[type=text]:focus, input[type=password]:focus {
   <form action="/action_page.php" class="container">
     <h1>Login</h1>
 
-    <label for="email"><b>Email</b></label>
-    <input type="text" placeholder="Enter Email" name="email" required>
+    <label for="username"><b>Username</b></label>
+    <input type="text" placeholder="Enter your username" name="username" required>
 
-    <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" required>
+    <label for="password"><b>Password</b></label>
+    <input type="password" placeholder="Enter your Password" name="password" required>
 
     <button type="submit" class="btn">Login</button>
   </form>

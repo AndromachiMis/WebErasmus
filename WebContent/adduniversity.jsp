@@ -44,15 +44,15 @@
 
 <div class = "form-group">
 <label for="name">Name:</label>
-<input type="text" class="form-control" id="name" placeholder="Enter the name of the University" required>
+<input type="text" class="form-control" id="name" name="name" placeholder="Enter the name of the University" required>
 </div>
 <div class = "form-group">
 <label for="location">Location:</label>
-<input type="text" class="form-control" id="location" placeholder="Enter university's location" required>
+<input type="text" class="form-control" id="location" name="location" placeholder="Enter university's location" required>
 </div>
 <div class = "form-group">
 <label for="num_acceptants">Number of acceptants:</label>
-<input type="number" class="form-control" id="num_acceptants" placeholder="Enter the number of acceptants for the University" required>
+<input type="number" class="form-control" id="num_acceptants" name="num_acceptants" placeholder="Enter the number of acceptants for the University" required>
 </div>
 <button type="submit" class="btn btn-primary">Submit</button>
 
