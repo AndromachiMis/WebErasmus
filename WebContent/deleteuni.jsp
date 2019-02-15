@@ -12,6 +12,24 @@
 </head>
 <body>
 <form action="DeleteUniversityServlet" method="POST">
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">ErasmusApp</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="servicespage.jsp">Home</a></li>
+      <li><a href="addstudent.jsp">Add Student</a></li>
+      <li><a href="deletestudent.jsp">Delete Student</a></li>
+      <li><a href="updatestudent.jsp">Update Student</a></li>
+      <li><a href="studentlist.jsp">See all Students</a></li>
+      <li><a href="adduniversity.jsp">Add university</a></li>
+      <li><a href="updateuniversity.jsp">Update University</a></li>
+      <li><a href="deleteuni.jsp">Delete University</a></li>
+      <li><a href="logout.jsp">Logout</a></li>
+    </ul>
+  </div>
+</nav>
 
 <div class = "page-header">
    
@@ -22,9 +40,10 @@
    <p>In order to delete a University from our system insert the id.</p>
    </div>
    
+   
    <div class = "form-group">
 <label for="id">University Id:</label>
-<input type="text" class="form-control" id="id" placeholder="University's Id">
+<input type="text" class="form-control" id="id" placeholder="University's Id" required>
 <small id="statusHelp" class="form-text text-muted">Insert ONLY the id of the University.</small>
 </div>
 <button type="submit" class="btn btn-primary">Submit</button>  

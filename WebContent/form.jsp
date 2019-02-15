@@ -53,11 +53,26 @@ body, html {
 </head>
 <body>
 
+
 <div class="bg"> </div>
 
 <form action="StudentServlet" method="POST">
 
 <div class = "page-header">
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">ErasmusApp</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="student.jsp">Home</a></li>
+      <li><a href="form.jsp">Submit Form</a></li>
+      <li><a href="unilist.jsp">Collaborating Universities</a></li>          
+      <li><a href="logout.jsp">Logout</a></li>
+    </ul>
+  </div>
+</nav>
+
    
    <h1>
       Participation in Erasmus Form      
@@ -69,36 +84,36 @@ body, html {
 
 <div class = "form-group">
 <label for="id">Id:</label>
-<input type="text" class="form-control" id="id" placeholder="Enter your id">
+<input type="text" class="form-control" id="id" placeholder="Enter your id" required>
 </div>
   <div class = "form-group">
 <label for="username">Username:</label>
-<input type="text" class="form-control" id="username" placeholder="Enter username">
+<input type="text" class="form-control" id="username" placeholder="Enter username" required>
 </div>
   <div class = "form-group">
 <label for="fullname">Fullname:</label>
-<input type="text" class="form-control" id="fullname" placeholder="Enter student's fullname">
+<input type="text" class="form-control" id="fullname" placeholder="Enter student's fullname" required>
 </div> 
 <div class = "form-group">
 <label for="fathername">Fathername:</label>
-<input type="text" class="form-control" id="fathername" placeholder="Enter student's fathername">
+<input type="text" class="form-control" id="fathername" placeholder="Enter student's fathername" required>
 </div>   
   <div class = "form-group">
 <label for="mothername">Mothername:</label>
-<input type="text" class="form-control" id="mothername" placeholder="Enter student's mothername">
+<input type="text" class="form-control" id="mothername" placeholder="Enter student's mothername" required>
 </div>
   <div class = "form-group">
 <label for="phone">Phone:</label>
-<input type="number" class="form-control" id="phone" placeholder="Enter student's phone">
+<input type="number" class="form-control" id="phone" placeholder="Enter student's phone" required>
 </div>
   <div class = "form-group">
 <label for="year">Year:</label>
-<input type="number" class="form-control" id="year" placeholder="Enter the year of studies">
+<input type="number" class="form-control" id="year" placeholder="Enter the year of studies" required>
 <small id="yearHelp" class="form-text text-muted">Only numbers.</small>
 </div>
   <div class = "form-group">
 <label for="lessons">Lessons:</label>
-<input type="number" class="form-control" id="lessons" placeholder="Enter the lessons which don't have an accessible grade">
+<input type="number" class="form-control" id="lessons" placeholder="Enter the lessons which don't have an accessible grade" required>
 <small id="lessonsHelp" class="form-text text-muted">Only numbers.</small>
 </div>
   
@@ -113,7 +128,7 @@ body, html {
   </label>
       <div class = "radio">
          <label>
-          <input type = "radio" name = "cert" id = "cert" value = "Yes" checked> Yes
+          <input type = "radio" name = "cert" id = "cert" value = "Yes" checked> Yes 
          </label>
           <div class = "radio">
          <label>

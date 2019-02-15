@@ -12,6 +12,25 @@
 </head>
 <body>
 <form action="UpdateUniversitiesServlet" method="POST">
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">ErasmusApp</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="servicespage.jsp">Home</a></li>
+      <li><a href="addstudent.jsp">Add Student</a></li>
+      <li><a href="deletestudent.jsp">Delete Student</a></li>
+      <li><a href="updatestudent.jsp">Update Student</a></li>
+      <li><a href="studentlist.jsp">See all Students</a></li>
+      <li><a href="adduniversity.jsp">Add university</a></li>
+      <li><a href="updateuniversity.jsp">Update University</a></li>
+      <li><a href="deleteuni.jsp">Delete University</a></li>
+      <li><a href="logout.jsp">Logout</a></li>
+    </ul>
+  </div>
+</nav>
+
 
 <div class = "page-header">
    
@@ -26,19 +45,19 @@
 
 <div class = "form-group">
 <label for="id">University's id:</label>
-<input type="number" class="form-control" id="id" placeholder="Enter the id of the University you want to update">
+<input type="number" class="form-control" id="id" placeholder="Enter the id of the University you want to update" required>
 </div>
 <div class = "form-group">
 <label for="name">Name:</label>
-<input type="text" class="form-control" id="name" placeholder="Enter the (new) name of the University">
+<input type="text" class="form-control" id="name" placeholder="Enter the (new) name of the University" required>
 </div>
 <div class = "form-group">
 <label for="location">Location:</label>
-<input type="text" class="form-control" id="location" placeholder="Enter university's (new) location">
+<input type="text" class="form-control" id="location" placeholder="Enter university's (new) location" required>
 </div>
 <div class = "form-group">
 <label for="num_acceptants">Number of acceptants:</label>
-<input type="number" class="form-control" id="num_acceptants" placeholder="Enter the (new) number of acceptants for the University">
+<input type="number" class="form-control" id="num_acceptants" placeholder="Enter the (new) number of acceptants for the University" required>
 </div>
 <button type="submit" class="btn btn-primary">Submit</button>
 

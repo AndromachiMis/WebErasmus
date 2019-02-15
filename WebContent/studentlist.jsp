@@ -27,6 +27,24 @@
 <% 	
 		WebErasmusGeneric weg = new WebErasmusGeneric();
 		List<JSONObject> list = weg.getStudents(); %>
+		<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">ErasmusApp</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="servicespage.jsp">Home</a></li>
+      <li><a href="addstudent.jsp">Add Student</a></li>
+      <li><a href="deletestudent.jsp">Delete Student</a></li>
+      <li><a href="updatestudent.jsp">Update Student</a></li>
+      <li><a href="studentlist.jsp">See all Students</a></li>
+      <li><a href="adduniversity.jsp">Add university</a></li>
+      <li><a href="updateuniversity.jsp">Update University</a></li>
+      <li><a href="deleteuni.jsp">Delete University</a></li>
+      <li><a href="logout.jsp">Logout</a></li>
+    </ul>
+  </div>
+</nav>
 
 	<div class="container">
 		<h2>Students List</h2>
