@@ -52,13 +52,6 @@ body, html {
  
 </head>
 <body>
-
-
-<div class="bg"> </div>
-
-<form action="SubmitFormServlet" method="POST">
-
-<div class = "page-header">
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -72,6 +65,14 @@ body, html {
     </ul>
   </div>
 </nav>
+
+
+<div class="bg"> </div>
+
+<form action="SubmitFormServlet" method="POST">
+
+<div class = "page-header">
+
 
    
    <h1>

@@ -32,7 +32,7 @@ body, html {
 	</br>
 	You will be informed by email whether you are accepted or not in any of the universities you have chosen.
 	</br>
-	<a href="studentpage">Return to the main menu</a>
+	<a href="student.jsp">Return to the main menu</a>
 	</center>
 	</br>
 	<div class="bg"></div>

@@ -58,7 +58,7 @@ public class UpdateStudentServlet extends HttpServlet {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		response.sendRedirect("updatestudent.jsp");
+		response.sendRedirect("successfulchanges.jsp");
 
 
 

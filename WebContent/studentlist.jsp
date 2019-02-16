@@ -24,10 +24,7 @@
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
-<% 	
-		WebErasmusGeneric weg = new WebErasmusGeneric();
-		List<JSONObject> list = weg.getStudents(); %>
-		<nav class="navbar navbar-inverse">
+<nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
       <a class="navbar-brand" href="#">ErasmusApp</a>
@@ -45,6 +42,10 @@
     </ul>
   </div>
 </nav>
+<% 	
+		WebErasmusGeneric weg = new WebErasmusGeneric();
+		List<JSONObject> list = weg.getStudents(); %>
+		
 
 	<div class="container">
 		<h2>Students List</h2>

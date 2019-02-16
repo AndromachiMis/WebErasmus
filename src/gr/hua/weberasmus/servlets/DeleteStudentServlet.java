@@ -49,7 +49,7 @@ public class DeleteStudentServlet extends HttpServlet {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		response.sendRedirect("deletestudent.jsp");
+		response.sendRedirect("successfulchanges.jsp");
 	}
 
 }

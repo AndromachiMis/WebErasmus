@@ -18,10 +18,7 @@
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
-	<% 	
-		WebErasmusGeneric weg = new WebErasmusGeneric();
-		List<JSONObject> list = weg.getUniversities(); %>
-		<nav class="navbar navbar-inverse">
+<nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
       <a class="navbar-brand" href="#">ErasmusApp</a>
@@ -34,6 +31,10 @@
     </ul>
   </div>
 </nav>
+	<% 	
+		WebErasmusGeneric weg = new WebErasmusGeneric();
+		List<JSONObject> list = weg.getUniversities(); %>
+		
 	<div class="container">
 		<h2>Universities List</h2>
 		<p>In the list below you can find all the Collaborating

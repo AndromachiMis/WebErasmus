@@ -50,7 +50,7 @@ public class AddUniversityServlet extends HttpServlet {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		response.sendRedirect("adduniversity.jsp");
+		response.sendRedirect("successfulchanges.jsp");
 	}
 
 }

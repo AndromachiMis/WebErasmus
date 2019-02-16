@@ -11,7 +11,6 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 </head>
 <body>
-<form action="UpdateUniversitiesServlet" method="POST">
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -30,6 +29,8 @@
     </ul>
   </div>
 </nav>
+<form action="UpdateUniversitiesServlet" method="POST">
+
 
 
 <div class = "page-header">
