@@ -13,6 +13,7 @@
 
 </head>
 <body>
+
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -36,6 +37,5 @@
   <h3>Welcome to administration page of ErasmusApp</h3>
   <p>In this page you have a variety of functions.</p>
 </div>
-
 </body>
 </html>

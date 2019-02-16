@@ -22,6 +22,7 @@ import org.json.simple.parser.ParseException;
 public class WebErasmusGeneric {
 	
 	public static final String URL = "http://localhost:8080/ErasmusApp";
+	public static final String LOGIN_API= "/";
 	public static final String STUDENT_API = "/api";
 	public static final String UNIVERSITIES_API = "/api/universities";
 	public static final String CHARSET = "UTF-8";
