@@ -7,6 +7,10 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import gr.hua.weberasmus.WebErasmusGeneric;
+
+
+
 /**
  * Servlet implementation class DeleteStudentServlet
  */
@@ -35,7 +39,17 @@ public class DeleteStudentServlet extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		doGet(request, response);
+		int id = Integer.parseInt(request.getParameter("id"));
+		String params = "";
+		String url = WebErasmusGeneric.URL + WebErasmusGeneric.STUDENT_API + "/delete/" + id;
+		WebErasmusGeneric weg = new WebErasmusGeneric();
+		try {
+			weg.sendDelete(url , params);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		response.sendRedirect("deletestudent.jsp");
 	}
 
 }

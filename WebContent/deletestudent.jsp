@@ -42,7 +42,7 @@
    
    <div class = "form-group">
 <label for="id">Student Id:</label>
-<input type="text" class="form-control" id="id" placeholder="Student's Id" required>
+<input type="text" class="form-control" id="id" name = "id" placeholder="Student's Id" required>
 <small id="statusHelp" class="form-text text-muted">Insert ONLY the id of the Student.</small>
 </div>
 <button type="submit" class="btn btn-primary">Submit</button>  

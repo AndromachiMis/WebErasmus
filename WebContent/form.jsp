@@ -56,7 +56,7 @@ body, html {
 
 <div class="bg"> </div>
 
-<form action="StudentServlet" method="POST">
+<form action="SubmitFormServlet" method="POST">
 
 <div class = "page-header">
 <nav class="navbar navbar-inverse">
@@ -84,36 +84,36 @@ body, html {
 
 <div class = "form-group">
 <label for="id">Id:</label>
-<input type="text" class="form-control" id="id" placeholder="Enter your id" required>
+<input type="text" class="form-control" id="id" name="id" placeholder="Enter your id" required>
 </div>
   <div class = "form-group">
 <label for="username">Username:</label>
-<input type="text" class="form-control" id="username" placeholder="Enter username" required>
+<input type="text" class="form-control" id="username" name="username" placeholder="Enter username" required>
 </div>
   <div class = "form-group">
 <label for="fullname">Fullname:</label>
-<input type="text" class="form-control" id="fullname" placeholder="Enter student's fullname" required>
+<input type="text" class="form-control" id="fullname" name="fullname" placeholder="Enter student's fullname" required>
 </div> 
 <div class = "form-group">
 <label for="fathername">Fathername:</label>
-<input type="text" class="form-control" id="fathername" placeholder="Enter student's fathername" required>
+<input type="text" class="form-control" id="fathername" name="fathername" placeholder="Enter student's fathername" required>
 </div>   
   <div class = "form-group">
 <label for="mothername">Mothername:</label>
-<input type="text" class="form-control" id="mothername" placeholder="Enter student's mothername" required>
+<input type="text" class="form-control" id="mothername" name="mothername" placeholder="Enter student's mothername" required>
 </div>
   <div class = "form-group">
 <label for="phone">Phone:</label>
-<input type="number" class="form-control" id="phone" placeholder="Enter student's phone" required>
+<input type="number" class="form-control" id="phone" name="phone" placeholder="Enter student's phone" required>
 </div>
   <div class = "form-group">
 <label for="year">Year:</label>
-<input type="number" class="form-control" id="year" placeholder="Enter the year of studies" required>
+<input type="number" class="form-control" id="year" name="year" placeholder="Enter the year of studies" required>
 <small id="yearHelp" class="form-text text-muted">Only numbers.</small>
 </div>
   <div class = "form-group">
 <label for="lessons">Lessons:</label>
-<input type="number" class="form-control" id="lessons" placeholder="Enter the lessons which don't have an accessible grade" required>
+<input type="number" class="form-control" id="lessons" name="lessons" placeholder="Enter the lessons which don't have an accessible grade" required>
 <small id="lessonsHelp" class="form-text text-muted">Only numbers.</small>
 </div>
   
