@@ -43,7 +43,7 @@
    
    <div class = "form-group">
 <label for="id">University Id:</label>
-<input type="text" class="form-control" id="id" placeholder="University's Id" required>
+<input type="text" class="form-control" id="id" name="id" placeholder="University's Id" required>
 <small id="statusHelp" class="form-text text-muted">Insert ONLY the id of the University.</small>
 </div>
 <button type="submit" class="btn btn-primary">Submit</button>  
