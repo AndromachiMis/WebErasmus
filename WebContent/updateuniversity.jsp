@@ -29,7 +29,7 @@
     </ul>
   </div>
 </nav>
-<form action="UpdateUniversitiesServlet" method="POST">
+<form action="UpdateUniversityServlet" method="POST">
 
 
 
@@ -46,19 +46,19 @@
 
 <div class = "form-group">
 <label for="id">University's id:</label>
-<input type="number" class="form-control" id="id" placeholder="Enter the id of the University you want to update" required>
+<input type="number" class="form-control" id="id" name="id" placeholder="Enter the id of the University you want to update" required>
 </div>
 <div class = "form-group">
 <label for="name">Name:</label>
-<input type="text" class="form-control" id="name" placeholder="Enter the (new) name of the University" required>
+<input type="text" class="form-control" id="name" name="name" placeholder="Enter the (new) name of the University" required>
 </div>
 <div class = "form-group">
 <label for="location">Location:</label>
-<input type="text" class="form-control" id="location" placeholder="Enter university's (new) location" required>
+<input type="text" class="form-control" id="location" name="location" placeholder="Enter university's (new) location" required>
 </div>
 <div class = "form-group">
 <label for="num_acceptants">Number of acceptants:</label>
-<input type="number" class="form-control" id="num_acceptants" placeholder="Enter the (new) number of acceptants for the University" required>
+<input type="number" class="form-control" id="num_acceptants" name="num_acceptants" placeholder="Enter the (new) number of acceptants for the University" required>
 </div>
 <button type="submit" class="btn btn-primary">Submit</button>
 
