@@ -127,7 +127,7 @@ public class WebErasmusGeneric {
 		}
 		
 		// HTTP PUT request
-		public void sendPut(String url, String urlParameters) throws Exception {
+		public void sendPut(String url) throws Exception {
 			URL obj = new URL(url);
 			HttpURLConnection con = (HttpURLConnection) obj.openConnection();
 
@@ -135,11 +135,8 @@ public class WebErasmusGeneric {
 			con.setRequestProperty("Accept-Language", "en-US,en;q=0.5");
 			con.setDoOutput(true);
 			DataOutputStream wr = new DataOutputStream(con.getOutputStream());
-			wr.writeBytes(urlParameters);
 			wr.flush();
 			wr.close();
-
-			int responseCode = con.getResponseCode();
 
 			BufferedReader in = new BufferedReader(
 			        new InputStreamReader(con.getInputStream()));
