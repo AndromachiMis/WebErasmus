@@ -49,11 +49,11 @@ public class UpdateStudentServlet extends HttpServlet {
 		int grades= Integer.parseInt(request.getParameter("grades"));
 		int lessons= Integer.parseInt(request.getParameter("lessons"));
 		
-		String params = "id=" + id + "&username=" + username + "&password=" + password + "&fullname=" + fullname + "&fathername=" + fathername + "&mothername=" + mothername + "&phone=" + phone + "&status=" + status + "&year=" + year + "&grades=" + grades + "&lessons=" + lessons;
-		String url = WebErasmusGeneric.URL + WebErasmusGeneric.STUDENT_API + "/updatestudent";
+		String params = "?id=" + id + "&username=" + username + "&password=" + password + "&fullname=" + fullname + "&fathername=" + fathername + "&mothername=" + mothername + "&phone=" + phone + "&status=" + status + "&year=" + year + "&grades=" + grades + "&lessons=" + lessons;
+		String url = WebErasmusGeneric.URL + WebErasmusGeneric.STUDENT_API + "/updatestudent" + params;
 		WebErasmusGeneric weg = new WebErasmusGeneric();
 		try {
-			weg.sendPut(url, params);
+			weg.sendPut(url);
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
