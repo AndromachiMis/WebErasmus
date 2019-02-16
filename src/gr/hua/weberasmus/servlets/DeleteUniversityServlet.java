@@ -38,8 +38,8 @@ public class DeleteUniversityServlet extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		int id = Integer.parseInt(request.getParameter("id"));
-		String params = "id=" + id;
-		String url = WebErasmusGeneric.URL + WebErasmusGeneric.UNIVERSITIES_API + "/delete/{id}";
+		String params = "";
+		String url = WebErasmusGeneric.URL + WebErasmusGeneric.UNIVERSITIES_API + "/delete/" + id;
 		WebErasmusGeneric weg = new WebErasmusGeneric();
 		try {
 			weg.sendDelete(url, params);
