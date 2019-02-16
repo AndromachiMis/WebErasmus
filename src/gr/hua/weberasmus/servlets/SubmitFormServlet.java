@@ -1,6 +1,8 @@
 package gr.hua.weberasmus.servlets;
 
 import java.io.IOException;
+import java.util.Arrays;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -45,11 +47,12 @@ public class SubmitFormServlet extends HttpServlet {
 		int phone = Integer.parseInt(request.getParameter("phone"));
 		int year = Integer.parseInt(request.getParameter("year"));
 		int lessons = Integer.parseInt(request.getParameter("lessons"));
-		String [] universities = request.getParameterValues("universities");
+		String universities = Arrays.toString(request.getParameterValues("universities"));
 		String cert = request.getParameter("cert");
 		String params = "username=" + username + "&fullname=" + fullname + "&fathername=" + fathername + "&mothername=" + mothername + "&phone=" + phone + "&year=" + year + "&lessons=" + lessons + "&universities=" + universities + "&cert=" + cert;
 		String url = WebErasmusGeneric.URL + WebErasmusGeneric.STUDENT_API + "/submitform";
 		WebErasmusGeneric weg = new WebErasmusGeneric();
+		System.out.println(params);
 		try {
 			weg.sendPost(url, params);
 		} catch (Exception e) {
