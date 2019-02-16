@@ -44,46 +44,46 @@
 
 <div class = "form-group">
 <label for="username">Username:</label>
-<input type="text" class="form-control" id="username" placeholder="Enter username" required>
+<input type="text" class="form-control" id="username" name="username" placeholder="Enter username" required>
 </div>
 <div class = "form-group">
 <label for="password">Password:</label>
-<input type="text" class="form-control" id="password" placeholder="Enter student's password" required>
+<input type="text" class="form-control" id="password" name="password" placeholder="Enter student's password" required>
 </div>
 <div class = "form-group">
 <label for="fullname">Fullname:</label>
-<input type="text" class="form-control" id="fullname" placeholder="Enter student's fullname" required>
+<input type="text" class="form-control" id="fullname" name="fullname" placeholder="Enter student's fullname" required>
 </div>
 <div class = "form-group">
 <label for="fathername">Fathername:</label>
-<input type="text" class="form-control" id="fathername" placeholder="Enter student's fathername" required>
+<input type="text" class="form-control" id="fathername" name="fathername" placeholder="Enter student's fathername" required>
 </div>
 <div class = "form-group">
 <label for="mothername">Mothername:</label>
-<input type="text" class="form-control" id="mothername" placeholder="Enter student's mothername" required>
+<input type="text" class="form-control" id="mothername" name="mothername" placeholder="Enter student's mothername" required>
 </div>
 <div class = "form-group">
 <label for="phone">Phone:</label>
-<input type="number" class="form-control" id="phone" placeholder="Enter student's phone" required>
+<input type="number" class="form-control" id="phone" name="phone" placeholder="Enter student's phone" required>
 </div>
 <div class = "form-group">
 <label for="status">Status:</label>
-<input type="text" class="form-control" id="status">
+<input type="text" class="form-control" id="status" name="status">
 <small id="statusHelp" class="form-text text-muted">In this field you should type if the student is active or inactive.</small>
 </div>
 <div class = "form-group">
 <label for="year">Year:</label>
-<input type="number" class="form-control" id="year" placeholder="Enter the year of studies" required>
+<input type="number" class="form-control" id="year" name="year" placeholder="Enter the year of studies" required>
 <small id="yearHelp" class="form-text text-muted">Only numbers.</small>
 </div>
 <div class = "form-group">
 <label for="grades">Grades:</label>
-<input type="number" class="form-control" id="grades" placeholder="Enter the average of lessons" required>
+<input type="number" class="form-control" id="grades" name="grades" placeholder="Enter the average of lessons" required>
 <small id="gradesHelp" class="form-text text-muted">Only numbers.</small>
 </div>
 <div class = "form-group">
 <label for="lessons">Lessons:</label>
-<input type="number" class="form-control" id="lessons" placeholder="Enter the lessons which don't have an accessible grade" required>
+<input type="number" class="form-control" id="lessons" name="lessons" placeholder="Enter the lessons which don't have an accessible grade" required>
 <small id="lessonsHelp" class="form-text text-muted">Only numbers.</small>
 </div>
  <button type="submit" class="btn btn-primary">Submit</button>
