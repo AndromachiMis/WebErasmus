@@ -28,7 +28,7 @@ html{
   background-image: url(Erasmus-img.jpg);
   height: 100%;
 
-  min-height: 750px;
+  min-height: 1000px;
 
   /* Center and scale the image nicely */
   background-position: center;
@@ -41,8 +41,8 @@ html{
 .container {
   position: absolute;
   right: 0;
-  margin: 20px;
-  max-width: 300px;
+  margin: 100px;
+  max-width: 500px;
   padding: 16px;
   background-color: white;
 }

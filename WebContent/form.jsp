@@ -40,7 +40,7 @@ body, html {
   background-image: url("erasmus-form.png");
 
   /* Full height */
-  height: 30%; 
+  height: 25%; 
 
   /* Center and scale the image nicely */
   background-position: center;
