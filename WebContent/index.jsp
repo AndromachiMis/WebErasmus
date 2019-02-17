@@ -82,7 +82,7 @@ input[type=text]:focus, input[type=password]:focus {
 <div class="bg-img">
 
 	
-  <form action="/action_page.php" class="container">
+  <form action="/LoginServlet" class="container">
     <h1>Login</h1>
 
     <label for="username"><b>Username</b></label>

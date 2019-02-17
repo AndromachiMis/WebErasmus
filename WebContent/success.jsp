@@ -26,7 +26,7 @@ body, html {
 }
 </style>
 </head>
-<body>
+<body style="background-color:#e0e0e0">
 	<center>
 	<h2>Your form has submitted succesfully</h2>
 	</br>

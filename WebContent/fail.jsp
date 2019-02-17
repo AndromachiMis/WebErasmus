@@ -6,7 +6,7 @@
 <meta charset="ISO-8859-1">
 <title>fail</title>
 </head>
-<body>
+<body style="background-color:#e0e0e0">
 <center>
 <h2>Sorry, your information is incorrect! You are not elligible for the Erasmus  
 </br>

@@ -51,7 +51,7 @@ body, html {
  
  
 </head>
-<body>
+<body style="background-color:#e0e0e0">
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">

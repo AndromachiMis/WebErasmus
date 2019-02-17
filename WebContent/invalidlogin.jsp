@@ -6,7 +6,7 @@
 <meta charset="ISO-8859-1">
 <title>Invalid Login</title>
 </head>
-<body>
+<body style="background-color:#e0e0e0">
 	<center>
 	<h2>Sorry, your username or password is incorrect! Please
 		try again!

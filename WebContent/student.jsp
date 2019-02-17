@@ -13,7 +13,7 @@
  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
 </head>
-<body>
+<body style="background-color:#e0e0e0">
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -34,9 +34,13 @@
 Have you ever thought about enriching the period of your studies and having better chances while looking for a job in the future?
 Have you ever been excited to share your ideas and to create good things with other students from all around the world?
 Have you ever dreamed to do an internship abroad, to learn co-operative work?
-Have you ever heard that life won’t be the same after Erasmus?
+Have you ever heard that life will not be the same after Erasmus?
 <h3>What is Erasmus?</h3>
-The Erasmus+ Programme is a European funding programme established in 1987 offering university students a possibility of studying or doing an internship abroad in another country for a period of at least 2 months and maximum 12 months per cycle of studies. Erasmus+ now offers the possibility to go way beyond the European borders as well.</p>
+The Erasmus Programme is a European funding programme established in 1987 offering university students a possibility of studying or doing an internship abroad in another country for a period of at least 2 months and maximum 12 months per cycle of studies. Erasmus+ now offers the possibility to go way beyond the European borders as well.</p>
+<h3>Can you benefit?</h3>
+Higher education students from after completing a 1st year of studies can benefit of the Erasmus+ studies and Erasmus+ placement programmes. There is no age limitation.
+<h3>Requirements</h3>
+In order to take part in Erasmus you have to be at the the third or fourth year of your studies. The total number of your courses that do not have an accessible grade should be at least five and finally you should have the appropriate language certificate.
 </div>
 
 	</body>
