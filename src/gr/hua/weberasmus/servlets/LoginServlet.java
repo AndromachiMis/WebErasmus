@@ -40,7 +40,7 @@ public class LoginServlet extends HttpServlet {
 		String username = request.getParameter("username");
 		String password = request.getParameter("password");
 		String params = "username=" + username + "&password=" + password;
-		String url = WebErasmusGeneric.URL + WebErasmusGeneric.LOGIN_API + "/login";
+		String url = WebErasmusGeneric.URL + WebErasmusGeneric.LOGIN_API + "login";
 		WebErasmusGeneric weg = new WebErasmusGeneric();
 		try {
 			weg.sendPost(url, params);
@@ -48,7 +48,18 @@ public class LoginServlet extends HttpServlet {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		response.sendRedirect("invalidlogin.jsp");
+		
+		if (weg.role != null) {
+			if (weg.role.equals("headsecretary")) {
+				response.sendRedirect("servicespage.jsp");
+			} else if (weg.role.equals("student")) {
+				response.sendRedirect("student.jsp");
+			}  else {
+				response.sendRedirect("invalidlogin.jsp");
+			}
+		} else {
+			response.sendRedirect("invalidlogin.jsp");
+		}
 	}
 
 }

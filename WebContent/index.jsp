@@ -82,7 +82,7 @@ input[type=text]:focus, input[type=password]:focus {
 <div class="bg-img">
 
 	
-  <form action="/LoginServlet" class="container">
+  <form action="LoginServlet" class="container" method="POST">
     <h1>Login</h1>
 
     <label for="username"><b>Username</b></label>
@@ -91,7 +91,7 @@ input[type=text]:focus, input[type=password]:focus {
     <label for="password"><b>Password</b></label>
     <input type="password" placeholder="Enter your Password" name="password" required>
 
-    <button type="submit" class="btn">Login</button>
+    <input type="submit" value="Login" class="btn" />
   </form>
  
 </div>

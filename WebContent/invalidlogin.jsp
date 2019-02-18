@@ -7,12 +7,10 @@
 <title>Invalid Login</title>
 </head>
 <body style="background-color:#e0e0e0">
-	<center>
-	<h2>Sorry, your username or password is incorrect! Please
-		try again!
-		 </br>
-		 </br>
-		 <a href="">Try Again</a></center>
-		</h2>
+	<div style="text-align: center;">
+		<h2>Sorry, your username or password is incorrect! Please try again!</h2>
+		<br>
+		<h2><a href="index.jsp">Try again</a></h2>
+	</div>
 </body>
 </html>

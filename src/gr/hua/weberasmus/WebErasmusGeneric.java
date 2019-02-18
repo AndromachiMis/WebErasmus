@@ -26,6 +26,8 @@ public class WebErasmusGeneric {
 	public static final String STUDENT_API = "/api";
 	public static final String UNIVERSITIES_API = "/api/universities";
 	public static final String CHARSET = "UTF-8";
+
+	public String role = null;
 	
 	public URLConnection getErasmusConnection(String endpoint) {
 		URLConnection connection = null;
@@ -123,6 +125,9 @@ public class WebErasmusGeneric {
 
 			while ((inputLine = in.readLine()) != null) {
 				response.append(inputLine);
+			}
+			if (url.endsWith("login")) {
+				role = response.toString();
 			}
 			in.close();
 		}
