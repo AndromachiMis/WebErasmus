@@ -70,9 +70,9 @@ public class SubmitFormServlet extends HttpServlet {
 			valid = false;
 		} else if (lessons > 5) {
 			valid = false;
-		} else if (universities.length() > 3) {
+		} /* else if (universities.length > 3) {
 			valid = false;
-		}
+		} */
 		if (valid) {
 			response.sendRedirect("success.jsp");
 		} else {

@@ -24,6 +24,7 @@
       <li><a href="adduniversity.jsp">Add university</a></li>
       <li><a href="updateuniversity.jsp">Update University</a></li>
       <li><a href="deleteuni.jsp">Delete University</a></li>
+      <li><a href="unilist.jsp">Collaborating Universities</a></li>          
       <li><a href="logout.jsp">Logout</a></li>
     </ul>
   </div>
